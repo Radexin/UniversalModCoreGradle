@@ -100,7 +100,7 @@ public class Config {
             File temp = null;
             if (umc.path == null) {
                 temp = Files.createTempDirectory("umc-loader").toFile();
-                Util.gitClone("https://github.com/TeamOpenIndustry/UniversalModCore.git", loaderBranch, temp, useSSH);
+                Util.gitClone("https://github.com/Radexin/UniversalModCore.git", loaderBranch, temp, useSSH);
                 path = temp;
             } else {
                 path = Paths.get(System.getProperty("user.dir"), umc.path).toFile();
