@@ -137,9 +137,9 @@ public class Config {
             vars.put("UMC_DEPENDENCY", String.format("name: '%s'", jar.getName().replace(".jar", "")));
             vars.put("UMC_FILE", jar.getPath());
         } else {
-            vars.put("UMC_REPO", "repositories { maven { url = \"https://teamopenindustry.cc/maven\" }}");
+            vars.put("UMC_REPO", "repositories { maven { url = \"https://mymavenrepo.com/repo/vrciSw3ViLylZxXAQYst\" }}");
             vars.put("UMC_DEPENDENCY", String.format("'cam72cam.universalmodcore:UniversalModCore:%s-%s'", loaderBranch, version));
-            vars.put("UMC_DOWNLOAD", String.format("https://teamopenindustry.cc/maven/cam72cam/universalmodcore/UniversalModCore/%s-%s/UniversalModCore-%s-%s.jar", loaderBranch, version, loaderBranch, version));
+            vars.put("UMC_DOWNLOAD", String.format("https://mymavenrepo.com/repo/vrciSw3ViLylZxXAQYst/cam72cam/universalmodcore/UniversalModCore/%s-%s/UniversalModCore-%s-%s.jar", loaderBranch, version, loaderBranch, version));
         }
 
         ArrayList<Mod.Dependency> dependencies = new ArrayList<>(mod.dependencies);
